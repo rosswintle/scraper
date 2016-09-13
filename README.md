@@ -6,7 +6,9 @@ This PHP script is a scraper aid that runs multiple Regular Expression patterns 
 
 You'll need a small PHP library to run this so, after cloning, you'll need to run:
 
+```
 > composer install
+```
 
 to pull in the dependencies.  The reason for this is that I partly wanted to try out some of the methods in Adam Wathan's book "Refactoring to Collections", so I use Laravel's Collection class a little.
 
@@ -14,7 +16,9 @@ to pull in the dependencies.  The reason for this is that I partly wanted to try
 
 You run the script like this:
 
+```
 > php scraper.php filelist.txt patternfile.php > output.json
+```
 
 ### Inputs
 
@@ -22,6 +26,7 @@ The filelist is a simple text file with one file path/name on each line
 
 The pattern file is a php script that returns an array. For example:
 
+```
 <?php
   return [
      'date' => '<span class="date-published">([^<]*)<\/span>',
@@ -29,11 +34,13 @@ The pattern file is a php script that returns an array. For example:
      'content' => '<div class="post-content content-body">(.*)<\/div>',
    ];
 ?>
+```
 
 ### Outputs
 
 The script echos a JSON version of an array like:
 
+```
 {
  'file1.html': {
     'data' : {
@@ -50,4 +57,4 @@ The script echos a JSON version of an array like:
     }
   }
 }
-
+```
