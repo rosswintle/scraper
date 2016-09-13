@@ -1,0 +1,14 @@
+{
+    "name": "rosswintle/scraper",
+    "description": "HTML scraper to match multiple strings against multiple files",
+    "require": {
+        "illuminate/support": "^5.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ross Wintle",
+            "email": "ross@oikos.org.uk"
+        }
+    ]
+}
