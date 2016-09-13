@@ -10,7 +10,7 @@ You'll need a small PHP library to run this so, after cloning, you'll need to ru
 > composer install
 ```
 
-to pull in the dependencies.  The reason for this is that I partly wanted to try out some of the methods in Adam Wathan's book "Refactoring to Collections", so I use Laravel's Collection class a little.
+to pull in the dependencies.  The reason for this is that I partly wanted to try out some of the methods in [Adam Wathan's](https://adamwathan.me/) book "[Refactoring to Collections](https://adamwathan.me/refactoring-to-collections/)", so I use [Laravel's Collection class](https://laravel.com/api/5.3/Illuminate/Support/Collection.html) a little.
 
 ### Running
 
